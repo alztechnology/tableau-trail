@@ -3,7 +3,7 @@ const TRAILS=[
 
 {id:"tp1",title:"Meet Tableau Public and connect Superstore",
 lesson:`<div class="goal"><b>Goal.</b> Install Tableau Public, connect Tableau's Sample Superstore, and find your way around the workspace.</div>
-<p>Sayang, this first lesson is setup. After this, every lesson uses the same Superstore file, so you only do this once.</p>
+<p>This first lesson is setup. After this, every lesson uses the same Superstore file, so you only do this once.</p>
 <p>Tableau Public is the free desktop app (Windows or Mac). You can save a workbook on your computer, and you can publish a viz to a public profile as a portfolio piece. It is not the paid Tableau Desktop. You can connect to files such as Excel, CSV and Google Sheets, but not to a private company SQL Server.</p>
 <h3>Practice</h3>
 <ol class="steps">
@@ -29,7 +29,7 @@ short:{q:"In two or three sentences, how would you describe Tableau Public to an
 
 {id:"tp2",title:"Dimensions, measures and basic charts",
 lesson:`<div class="goal"><b>Goal.</b> Tell a dimension from a measure, tell blue pills from green pills, and build a bar chart and a line chart on Superstore.</div>
-<p>This will feel familiar, baby. In SQL you GROUP BY a column and SUM another. In Salesforce reports you group rows and summarise numbers. Tableau just makes that visual.</p>
+<p>This will feel familiar. In SQL you GROUP BY a column and SUM another. In Salesforce reports you group rows and summarise numbers. Tableau just makes that visual.</p>
 <ul>
 <li><b>Dimensions</b> (usually blue) slice the data: Category, Region, Segment, Customer Name, Order ID.</li>
 <li><b>Measures</b> (usually green) are numbers you aggregate: Sales, Profit, Quantity, Discount.</li>
@@ -134,7 +134,7 @@ short:{q:"When would you use a table calculation instead of an LOD expression? G
 
 {id:"tp6",title:"Dashboards and actions",
 lesson:`<div class="goal"><b>Goal.</b> Combine a few worksheets into a clean dashboard, and add a filter action so clicking one chart drives the others.</div>
-<p>A dashboard is how you present the work, sayang. The charts you already built become tiles in one view, the same way you used to pack Lenovo APJ metrics into one pack instead of sending six loose reports.</p>
+<p>A dashboard is how you present the work. The charts you already built become tiles in one view, the same way you used to pack Lenovo APJ metrics into one pack instead of sending six loose reports.</p>
 <h3>Practice</h3>
 <ol class="steps">
 <li>Make two small KPI sheets if you do not have them yet: one with SUM(Sales) as a big text number, one with Profit Ratio as a big text number. Hide the axis titles, give each sheet a short name, and format the numbers so they are easy to read from a distance.</li>
@@ -157,7 +157,7 @@ short:{q:"If you had 15 minutes to build a Superstore sales review dashboard, wh
 
 {id:"tp7",title:"Publish to Tableau Public as a portfolio piece",
 lesson:`<div class="goal"><b>Goal.</b> Publish a clean workbook to your Tableau Public profile and get a link you can put on a CV or LinkedIn.</div>
-<p>This is the payoff, baby. A live viz is stronger in an interview than a screenshot, because the hiring manager can click it.</p>
+<p>This is the payoff. A live viz is stronger in an interview than a screenshot, because the hiring manager can click it.</p>
 <h3>Practice</h3>
 <ol class="steps">
 <li>Before you publish, tidy the workbook. Rename every sheet you will show. Hide or delete practice sheets you do not want people to see. Check that filters work and that no dummy titles remain.</li>
@@ -183,7 +183,7 @@ short:{q:"How would you describe your Tableau Public portfolio piece in two sent
 {id:"cap",icon:"🏁",title:"Product Analytics Capstone",desc:"Build one portfolio dashboard: product KPIs, a trend, category mix, new vs repeat orders, and a simple operations funnel on Superstore.",units:[
 {id:"cap1",title:"Build a Superstore Product Pulse dashboard",
 lesson:`<div class="goal"><b>Goal.</b> Build and publish one dashboard you can actually show. Think product analytics: KPIs, mix, trend, and new versus repeat, not a random gallery of charts.</div>
-<p>Sayang, Superstore is a fictional retailer, not a SaaS app, so we will not fake a signup funnel we do not have. We will build a product performance dashboard, plus an honest operations funnel: orders placed, orders kept (not returned), then profitable kept orders.</p>
+<p>Superstore is a fictional retailer, not a SaaS app, so we will not fake a signup funnel we do not have. We will build a product performance dashboard, plus an honest operations funnel: orders placed, orders kept (not returned), then profitable kept orders.</p>
 <h3>Build this</h3>
 <ol class="steps">
 <li><b>KPI row.</b> Five small text sheets, or one sheet with Measure Names and Measure Values, showing: SUM(Sales), SUM(Profit), Profit Ratio (<code>SUM([Profit]) / SUM([Sales])</code>), Orders (<code>COUNTD([Order ID])</code>), and AOV (<code>SUM([Sales]) / COUNTD([Order ID])</code>). Format them so a VP can read them in one glance.</li>
@@ -211,7 +211,7 @@ short:{q:"Write a four-line 'how I would talk through this dashboard' script for
 
 {id:"ref1",title:"Tableau function cheat sheet",
 lesson:`<div class="goal"><b>Goal.</b> Keep a short list of functions you will actually type in interviews and on the capstone, and know where the official lists live.</div>
-<p>You do not need to memorise every function, baby. You need the ones that show up in product and BI work. Official catalogues: <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions.htm">Functions in Tableau</a>, plus <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_logical.htm">logical</a>, <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm">date</a> and <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_string.htm">string</a>.</p>
+<p>You do not need to memorise every function. You need the ones that show up in product and BI work. Official catalogues: <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions.htm">Functions in Tableau</a>, plus <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_logical.htm">logical</a>, <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm">date</a> and <a target="_blank" rel="noopener" href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_string.htm">string</a>.</p>
 <div class="tablewrap"><table>
 <tr><th>Need</th><th>Use</th></tr>
 <tr><td>Totals, average, min, max, row count</td><td>SUM, AVG, MIN, MAX, COUNT</td></tr>
@@ -241,7 +241,7 @@ short:{q:"Write the Tableau formulas for Profit Ratio, AOV, and First Order Date
 
 {id:"ref2",title:"SQL to Tableau translations",
 lesson:`<div class="goal"><b>Goal.</b> Map the SQL you already write onto Tableau pills and calcs, so the tool feels like a new coat, not a new language.</div>
-<p>This one should make you smile, sayang. You have been doing this logic for years. Tableau is mostly a visual way to say the same thing.</p>
+<p>This one should make you smile. You have been doing this logic for years. Tableau is mostly a visual way to say the same thing.</p>
 <div class="tablewrap"><table>
 <tr><th>In SQL</th><th>In Tableau</th></tr>
 <tr><td>SELECT Category, SUM(Sales) FROM Orders GROUP BY Category</td><td>Category on Rows or Columns, SUM(Sales) on the other shelf</td></tr>
